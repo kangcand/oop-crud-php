@@ -45,8 +45,8 @@ foreach ($dosen->index() as $data) {
                     </td>
                     <td>
                         <form action="/dosen/proses.php" method="post">
-                            <input type="text" name="id" value="<?php echo $data['id']; ?>">
-                            <input type="text" name="aksi" value="delete">
+                            <input type="hidden" name="id" value="<?php echo $data['id']; ?>">
+                            <input type="hidden" name="aksi" value="delete">
                             <button type="submit" name="save" onclick="return confirm('Apakah Anda Yakin Mau menghapus data ini ?')">
                                 Delete
                             </button>
