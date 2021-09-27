@@ -21,7 +21,7 @@ class Database
 }
 // Data Tabel Dosen & Mahasiswa
 include 'dosen.php';
-include 'mahasiswa.php';
+// include 'mahasiswa.php';
 
 // koneksi DB
 $db = new Database();
